@@ -14,4 +14,12 @@ public class SingletonInner {
     public static SingletonInner getSingle(){
         return Inner.s;//调用时初始化Inner
     }
+
+    public static void main(String[] args) {
+        SingletonInner s = SingletonInner.getSingle();
+        System.out.println(s.toString());
+        SingletonInner s2 = SingletonInner.getSingle();
+        System.out.println(s2.toString());
+    }
 }
+
