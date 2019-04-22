@@ -1,5 +1,6 @@
 import org.junit.Test;
 
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.TreeMap;
 
@@ -33,6 +34,10 @@ public class OtherTest {
         double a = (3.14+1e20)-1e20;
         double b = 3.14+(1e20-1e20);
         System.out.println(a + " " + b);
+    }
+    @Test
+    public void testTime(){
+        System.out.println(LocalDateTime.now());
     }
 
     public static void main(String[] args) {
